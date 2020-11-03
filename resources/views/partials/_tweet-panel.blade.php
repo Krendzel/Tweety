@@ -7,7 +7,7 @@
         @enderror
         <hr class="my-4">
         <div class="flex justify-between p-2">
-            <img src="{{ auth()->user()->avatar }}" alt="" class="rounded-full">
+            <img src="{{ auth()->user()->avatar }}" alt="" class="rounded-full" style="width: 40px">
             <button href="#" class="bg-indigo-500 text-white font-semibold px-4 py-2 rounded-full hover:bg-indigo-600">Tweet a-roo!</button>
         </div>
     </form>
