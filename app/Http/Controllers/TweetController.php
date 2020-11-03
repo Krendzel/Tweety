@@ -11,7 +11,7 @@ class TweetController extends Controller
     {
         $tweets = auth()->user()->timeline();
 
-        return view('master', [
+        return view('tweets.index', [
             'tweets' => $tweets
         ]);
     }
