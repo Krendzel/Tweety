@@ -13,12 +13,20 @@
     @include('partials.navbar')
     <main>
         <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-            <div class="flex justify-between">
-                <div class="flex-1">
+            <div class="lg:flex justify-between">
+                <div class="lg:w-1/6 lg:w-32">
                     @include('partials._sidebar-links')
                 </div>
-                <div class="flex-1">2</div>
-                <div class="flex-1">
+                <div class="lg:mx-10 flex-1">
+                        @include('partials._tweet-panel')
+                    <div class="mt-6  border border-gray-300 rounded-lg">
+                        @foreach( range(1,8) as $index)
+                            @include('partials._timeline')
+                        @endforeach
+                    </div>
+
+                </div>
+                <div class="lg:w-1/5">
                     @include('partials._sidebar-friends')
                 </div>
             </div>
