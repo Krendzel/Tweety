@@ -20,7 +20,7 @@
                 <div class="lg:mx-10 flex-1">
                         @include('partials._tweet-panel')
                     <div class="mt-6  border border-gray-300 rounded-lg">
-                        @foreach( range(1,8) as $index)
+                        @foreach($tweets as $tweet)
                             @include('partials._timeline')
                         @endforeach
                     </div>
