@@ -18,13 +18,7 @@
                     @include('partials._sidebar-links')
                 </div>
                 <div class="lg:mx-10 flex-1">
-                        @include('partials._tweet-panel')
-                    <div class="mt-6  border border-gray-300 rounded-lg">
-                        @foreach($tweets as $tweet)
-                            @include('partials._timeline')
-                        @endforeach
-                    </div>
-
+                    @yield('content')
                 </div>
                 <div class="lg:w-1/5">
                     @include('partials._sidebar-friends')
